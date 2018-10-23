@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header>
+  <nav class="main-nav">
+    <a href="index.html" class="main-nav-logo current">
+      <img class="logo" width="100" height="80" src="img/logo.png">
+      <span class="visually-hidden">Седона</span></a>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="gallery.html">Фото и видео</a></li>
+      <li><a href="feedback.html">Форма отзыва</a></li>
+      <li><a href="https://htmlacademy.ru/">HTML academy</a></li>
+    </ul>
+    <button type="button"><span class="visually-hidden">Меню</span></button>
+    <button type="button"><span class="visually-hidden">Закрыть</span></button>
+  </nav>
+</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<main>
+  <h1 class="visually-hidden">Сайт бронирования отелей в Седоне</h1>
 
-  </body>
+  <div class="main-photo">
+    <!-- Картинощка как фон дива через CSS -->
+    <span class="visually-hidden">Фото Седона</span>
+    <div class="main-photo-text">
+      <!-- "Because the Grand Canyon sucks!" -->
+    </div>
+  </div>
+
+
+  <section class="features">
+    <div class="features-textbox text-box">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p class="caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+
+    <ul class="features-list">
+      <li class="features-item features-item-blue">
+        <h3>Настоящий городок</h3>
+        <span class="feature-number">— №1 —</span>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="features-item-img accomodation">
+          <!-- Картинощка как фон дива через CSS -->
+          <span class="visually-hidden">Фото городка</span></div>
+      </li>
+
+      <!-- features-item-middle HERE if CSS exist! -->
+
+      <li class="features-item features-item-blue">
+        <h3>Там есть Мост дьявола</h3>
+        <span class="feature-number">— №2 —</span>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="features-item-img canyon">
+          <!-- Картинощка как фон дива через CSS -->
+          <span class="visually-hidden">Фото каньона</span></div>
+      </li>
+
+      <li class="features-item features-item-grey">
+        <h3>Небольшая площадь</h3>
+        <span class="feature-number">— №3 —</span>
+        <p>Все достопримечательности находятся очень близко</p>
+      </li>
+
+      <li class="features-item features-item-grey">
+        <h3>Красивая дорога</h3>
+        <span class="feature-number">— №4 —</span>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+
+      <li class="features-item features-item-grey">
+        <h3>Мало туристов</h3>
+        <span class="feature-number">— №5 —</span>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+      </li>
+
+      <li class="features-item-middle">
+        <ul class="features-list">
+          <li class="features-item features-item-white pic-house">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+
+          <li class="features-item features-item-white pic-present">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+
+          <li class="features-item features-item-white pic-burger">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="search-by-date">
+    <div class="text-box">
+      <h2 class="visually-hidden">Поиск и бронирование</h2>
+      <h3>Заинтересовались?</h3>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в Cедоне.</p>
+      <button class="button button-blue" type="button">
+        Найти гостиницу
+      </button>
+    </div>
+
+    <!-- Форма поиска гостиницы будет тутощки
+    <form method="get" action="https://echo.htmlacademy.ru"></form> -->
+
+  </section>
+
+  <section class="map">
+    <h2 class="visually-hidden">Местоположение Седоны</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19552.46671655029!2d-111.79038018875906!3d34.867054781101125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1536167809755"
+      width="100%" height="584" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p><img src="img/map.jpg" width="100%" height="auto" alt="Местоположение Седоны"></p>
+  </section>
+</main>
+
+<footer class="index-footer">
+  <span class="caption">#visitsedona</span>
+
+  <ul class="social">
+    <li class="social-btn"><a href="#">
+      <span class="visually-hidden">Twitter</span>
+    </a></li>
+
+    <li class="social-btn"><a href="#">
+      <span class="visually-hidden">Facebook</span>
+    </a></li>
+
+    <li class="social-btn"><a href="#">
+      <span class="visually-hidden">YouTube</span>
+    </a></li>
+  </ul>
+
+  <div class="link-academy">Разработано
+    <a href="https://htmlacademy.ru/intensive/adaptive"></a>
+  </div>
+
+</footer>
+
+</body>
 </html>
