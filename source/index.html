@@ -7,18 +7,22 @@
 <body>
 <header>
   <nav class="nav">
-    <a class="nav__link link--current" href="index.html">
-      <img class="nav__link__logo" width="100" height="80" src="img/logo.png">
+    <a class="nav__link">
+      <img class="nav__link-logo" width="100" height="80" src="img/logo.png">
       <span class="visually-hidden">Седона</span>
     </a>
     <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link  link--current" href="index.html">Главная</a></li>
+      <li class="nav__item"><a class="nav__link nav__link--current">Главная</a></li>
       <li class="nav__item"><a class="nav__link" href="gallery.html">Фото и видео</a></li>
       <li class="nav__item"><a class="nav__link" href="feedback.html">Форма отзыва</a></li>
       <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/">HTML academy</a></li>
     </ul>
-    <button class="nav__button nav__button--menu" type="button"><span class="visually-hidden">Меню</span></button>
-    <button class="nav__button nav__button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="nav__button nav__button--menu" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <button class="nav__button nav__button--close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </nav>
 </header>
 
@@ -35,66 +39,68 @@
 
 
   <section class="features">
-    <div class="text-box">
+    <div class="features__text-box text-box">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="text-box__caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="text-box__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
     <ul class="features-list">
-      <li class="features-item features-item--blue">
-        <p class="caption">Настоящий городок</p>
-        <span class="feature-number">— №1 —</span>
-        <p class="text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <div class="features-item__img img--accomodation">
+      <li class="features-list__item features-item features-item--blue">
+        <p class="features-item__caption">Настоящий городок</p>
+        <span class="features-item__number">— №1 —</span>
+        <p class="features-item__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="features-item__img features-item__img--accomodation">
           <!-- Картинощка как фон дива через CSS -->
-          <span class="visually-hidden">Фото городка</span></div>
+          <span class="visually-hidden">Фото городка</span>
+        </div>
       </li>
 
-      <!-- features-item--middle HERE if CSS exist! -->
+      <!-- features-list__item--middle HERE if CSS exist! -->
 
-      <li class="features-item features-item--blue">
-        <p class="caption">Там есть Мост дьявола</p>
-        <span class="feature-number">— №2 —</span>
-        <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <div class="features-item__img img--canyon">
+      <li class="features-list__item features-item features-item--blue">
+        <p class="features-item__caption">Там есть Мост дьявола</p>
+        <span class="features-item__number">— №2 —</span>
+        <p class="features-item__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="features-item__img features-item__img--canyon">
           <!-- Картинощка как фон дива через CSS -->
-          <span class="visually-hidden">Фото каньона</span></div>
+          <span class="visually-hidden">Фото каньона</span>
+        </div>
       </li>
 
-      <li class="features-item features-item--grey">
-        <p class="caption">Небольшая площадь</p>
-        <span class="feature-number">— №3 —</span>
-        <p class="text">Все достопримечательности находятся очень близко</p>
+      <li class="features-list__item features-item features-item--grey">
+        <p class="features-item__caption">Небольшая площадь</p>
+        <span class="features-item__number">— №3 —</span>
+        <p class="features-item__text">Все достопримечательности находятся очень близко</p>
       </li>
 
-      <li class="features-item features-item--grey">
-        <p class="caption">Красивая дорога</p>
-        <span class="feature-number">— №4 —</span>
-        <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      <li class="features-list__item features-item features-item--grey">
+        <p class="features-item__caption">Красивая дорога</p>
+        <span class="features-item__number">— №4 —</span>
+        <p class="features-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </li>
 
-      <li class="features-item features-item--grey">
-        <p class="caption">Мало туристов</p>
-        <span class="feature-number">— №5 —</span>
-        <p class="text">Большинство едет в гранд каньон и толпится там</p>
+      <li class="features-list__item features-item features-item--grey">
+        <p class="features-item__caption">Мало туристов</p>
+        <span class="features-item__number">— №5 —</span>
+        <p class="features-item__text">Большинство едет в гранд каньон и толпится там</p>
       </li>
 
-      <li class="features-item features-item--middle">
+      <li class="features-list__item features-item features-item--middle">
         <ul class="features-list">
-          <li class="features-item features-item--white pic-house">
-            <p class="caption">Жильё</p>
-            <p class="text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="features-item features-item--white features-item--pic-house">
+            <p class="features-item__caption">Жильё</p>
+            <p class="features-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
 
-          <li class="features-item features-item--white pic-present">
-            <p class="caption">Сувениры</p>
-            <p class="text">Не только китайского, но и местного производства!</p>
+          <li class="features-list__item features-item features-item--white features-item--pic-present">
+            <p class="features-item__caption">Сувениры</p>
+            <p class="features-item__text">Не только китайского, но и местного производства!</p>
           </li>
 
-          <li class="features-item features-item--white pic-burger">
-            <p class="caption">Еда</p>
-            <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="features-list__item features-item features-item--white features-item--pic-burger">
+            <p class="features-item__caption">Еда</p>
+            <p class="features-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </li>
@@ -103,12 +109,12 @@
   </section>
 
   <section class="search-by-date">
-    <div class="text-box">
+    <div class="search-by-date__text-box">
       <h2 class="visually-hidden">Поиск и бронирование отелей</h2>
-      <p class="caption">Заинтересовались?</p>
-      <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+      <p class="search-by-date__caption">Заинтересовались?</p>
+      <p class="search-by-date__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
         предложения гостиниц в Cедоне.</p>
-      <button class="search-by-date__button button--long button--blue" type="button">
+      <button class="search-by-date__button button button--blue" type="button">
         Найти гостиницу
       </button>
     </div>
@@ -123,35 +129,35 @@
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19552.46671655029!2d-111.79038018875906!3d34.867054781101125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1536167809755"
       width="100%" height="584" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <p><img src="img/map.jpg" width="100%" height="auto" alt="Местоположение Седоны"></p>
+    <p class="map__img"><img src="img/map.jpg" width="100%" height="auto" alt="Местоположение Седоны"></p>
   </section>
 </main>
 
 <footer class="footer">
-  <span class="caption">#visitsedona</span>
+  <span class="footer__caption">#visitsedona</span>
 
   <ul class="footer__social-list">
-    <li class="social-btn social-btn-twitter">
-      <a class="social-link" href="#">
+    <li class="footer__social-item">
+      <a class="social-btn social-btn--twitter" href="#">
         <span class="visually-hidden">Twitter</span>
       </a>
     </li>
 
-    <li class="social-btn social-btn-facebook">
-      <a class="social-link" href="#">
+    <li class="footer__social-item">
+      <a class="social-btn social-btn--facebook" href="#">
         <span class="visually-hidden">Facebook</span>
       </a>
     </li>
 
-    <li class="social-btn social-btn-youtube">
-      <a class="social-link" href="#">
+    <li class="footer__social-item">
+      <a class="social-btn social-btn--youtube" href="#">
         <span class="visually-hidden">YouTube</span>
       </a>
     </li>
   </ul>
 
-  <div class="footer__link-academy">Разработано
-    <a class="social-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+  <div class="footer__link--academy">Разработано
+    <a class="footer__social-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
   </div>
 
 </footer>
