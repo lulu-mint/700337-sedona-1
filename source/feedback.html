@@ -41,7 +41,7 @@
   <section class="feedback">
     <h2 class="visually-hidden">Форма отзыва</h2>
 
-    <div class="feedback__text-box text-box">
+    <div class="text-box">
       <p class="text-box__caption">Оставьте свой отзыв</p>
       <p class="text-box__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,
         а также о посещенных вами достопримечательностях</p>
@@ -50,7 +50,7 @@
     <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
 
       <fieldset class="feedback-form__block">
-        <h3 class="feedback-form__caption">Представьтесь:</h3>
+        <p class="feedback-form__caption">Представьтесь:</p>
 
         <ul class="feedback-form__list feedback-form__list--name">
           <li class="name-item">
@@ -73,20 +73,20 @@
       <fieldset class="feedback-form__block">
         <h3 class="feedback-form__caption">Контактная информация:</h3>
         <ul class="feedback-form__list feedback-form__list--contacts">
-          <li class="contacts-item">
+          <li class="feedback-form__contacts-item">
             <label class="feedback-form__label--thin contacts-item__label" for="phone">Телефон*:</label>
             <input class="feedback-form__input-text" type="number" name="reviewer-phone" id="phone" placeholder="Введите теллефон" required>
-          <button class="visually-hidden button-grey button-phone" type="button">
+            <button class="feedback-form__input-button button button-grey button-phone" type="button">
 
-          </button>
+            </button>
           </li>
 
-          <li class="contacts-item">
+          <li class="feedback-form__contacts-item">
             <label class="feedback-form__label--thin contacts-item__label" for="email">Электронная почта*:</label>
             <input class="feedback-form__input-text" type="email" name="reviewer-email" id="email" placeholder="Введите e-mail" required>
-          <button class="visually-hidden button-grey button-mail" type="button">
+            <button class="feedback-form__input-button button button-grey button-mail" type="button">
 
-          </button>
+            </button>
           </li>
         </ul>
       </fieldset>
@@ -95,20 +95,17 @@
         <h3 class="feedback-form__caption">Ваше общее впечатление:</h3>
         <ul class="feedback-form__list feedback-form__list--opinion">
           <li class="opinion-item">
-            <input class="visually-hidden input input--radio" type="radio" name="opinion" id="opinion-good"
-                    checked>
+            <input class="visually-hidden input input--radio" type="radio" name="opinion" id="opinion-good" checked>
             <label class="feedback-form__label--thick radio-label" for="opinion-good">Скорее положительное</label>
           </li>
 
           <li class="opinion-item">
-            <input class="visually-hidden input input--radio"
-                      type="radio" name="opinion" id="opinion-bad">
+            <input class="visually-hidden input input--radio" type="radio" name="opinion" id="opinion-bad">
             <label class="feedback-form__label--thick radio-label" for="opinion-bad">Скорее отрицательное</label>
           </li>
 
           <li class="opinion-item">
-            <input class="visually-hidden input input--radio"
-                    type="radio" name="opinion" id="opinion-no-opinion">
+            <input class="visually-hidden input input--radio" type="radio" name="opinion" id="opinion-no-opinion">
             <label class="feedback-form__label--thick radio-label" for="opinion-no-opinion">Затрудняюсь ответить</label>
           </li>
         </ul>
@@ -118,36 +115,33 @@
         <h3 class="feedback-form__caption">Посещенные достопримечательности:</h3>
         <ul class="feedback-form__list feedback-form__list--attractions">
           <li class="attractions-item">
-            <input class="visually-hidden input input--checkbox"
-                    type="checkbox" name="attraction-devils-bridge" id="devils-bridge" checked>
+            <input class="visually-hidden input input--checkbox" type="checkbox" name="attraction-devils-bridge" id="devils-bridge" checked>
             <label class="feedback-form__label--thick checkbox-label" for="devils-bridge">Мост Дьявола</label>
           </li>
 
           <li class="attractions-item">
-            <input class="visually-hidden input input--checkbox"
-                    type="checkbox" name="attraction-bell-mountain" id="bell-mountain" checked>
+            <input class="visually-hidden input input--checkbox" type="checkbox" name="attraction-bell-mountain" id="bell-mountain" checked>
             <label class="feedback-form__label--thick checkbox-label" for="bell-mountain">Гора-Колокол</label>
           </li>
 
           <li class="attractions-item">
-            <input class="visually-hidden input input--checkbox"
-                    type="checkbox" name="attraction-slide-park" id="slide-park" checked>
+            <input class="visually-hidden input input--checkbox" type="checkbox" name="attraction-slide-park" id="slide-park" checked>
             <label class="feedback-form__label--thick checkbox-label" for="slide-park">Слайд-парк</label>
           </li>
 
           <li class="attractions-item">
-            <input class="visually-hidden input input--checkbox"
-                    type="checkbox" name="attraction-red-rocks" id="red-rocks">
+            <input class="visually-hidden input input--checkbox" type="checkbox" name="attraction-red-rocks" id="red-rocks">
             <label class="feedback-form__label--thick checkbox-label" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
 
       <fieldset class="feedback-form__block">
-        <h3  class="feedback-form__caption">
+        <h3 class="feedback-form__caption">
           <label for="comment">Опишите свои эмоции:</label>
         </h3>
-        <textarea class="feedback-form__comment-area" id="comment" rows="5" cols="38" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="feedback-form__comment-area" id="comment" rows="5" cols="38"
+                  placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
 
       <button class="feedback-form__button button button--blue" type="submit">Отправить отзыв</button>
@@ -160,19 +154,19 @@
   <p class="footer__caption">#visitsedona</p>
 
   <ul class="footer__social-list">
-    <li class="footer__social-item social-btn social-btn--twitter">
+    <li class="button--social-btn social-btn--twitter">
       <a class="social-link" href="#">
         <span class="visually-hidden">Twitter</span>
       </a>
     </li>
 
-    <li class="footer__social-item social-btn social-btn--facebook">
+    <li class="button--social-btn  social-btn--facebook">
       <a class="social-link" href="#">
         <span class="visually-hidden">Facebook</span>
       </a>
     </li>
 
-    <li class="footer__social-item social-btn social-btn--youtube">
+    <li class="button--social-btn  social-btn--youtube">
       <a class="social-link" href="#">
         <span class="visually-hidden">YouTube</span>
       </a>

@@ -1,26 +1,25 @@
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/ptsans.woff2') format('woff2'),
-  url('../fonts/ptsans.woff') format('woff');
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url("../fonts/ptsansbold.woff"),
-  url("../fonts/ptsansbold.woff2");
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
   width: 320px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,6 +30,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 @import "nav.less";
 @import "main-photo";
 @import "features";
@@ -42,4 +42,3 @@ body {
 @import "photos-info";
 @import "video";
 @import "feedback-form";
-@import "name-list";
