@@ -1,0 +1,165 @@
+.features {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-item {
+  margin: 0;
+  padding: 0 20px;
+  color: #333333;
+}
+
+.features-item__caption {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features-item__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features-item__number {
+  margin: 12px 0 18px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features-item--grey {
+  padding: 30px 40px;
+  background-color: #eeeeee;
+  position: relative;
+
+  text-align: center;
+
+  &:not(:last-of-type)::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-color: #d6d6d6;
+  }
+}
+
+.features-item--blue {
+  padding: 40px 20px;
+
+  background-color: #81b3d2;
+  color: white;
+
+  text-align: center;
+
+  & .features-item__caption,
+  & .features-item__text,
+  & .features-item__number {
+    color: white;
+  }
+}
+
+.features-item__img {
+  margin-top: auto;
+  width: 100%;
+  height: 260px;
+}
+
+.features-item__img--canyon {
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features-item__img--accomodation {
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*    ПОРЯДОК БЛОКОВ   */
+
+.features-list__item:first-of-type,
+.features-list__item:nth-of-type(2) {
+  order: -2;
+}
+
+.features-item--middle {
+  order: -1;
+}
+
+.features-list__additional-item {
+  margin: 40px 0 0;
+  padding: 0 20px 0 50px;
+  position: relative;
+  & .features-item__caption {
+    margin-bottom: 25px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+
+}
+
+.features-item--pic-house::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 40px;
+  height: 36px;
+
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features-item--pic-present::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 38px;
+  height: 36px;
+
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features-item--pic-burger::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 38px;
+  height: 36px;
+
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

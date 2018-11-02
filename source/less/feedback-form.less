@@ -1,0 +1,192 @@
+.feedback-form{
+  margin: 0;
+  padding: 0;
+
+}
+.feedback-form__block{
+  margin: 0;
+  padding: 0 20px;
+
+  border: none;
+  border-top: 1px solid #d6d6d6;
+}
+.feedback-form__list{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form__caption{
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.feedback-form__label--thin{
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback-form__label--thick,
+.feedback-form__input-text::placeholder{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: black;
+  text-transform: none;
+}
+.feedback-form__input-text{
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+
+  height: 60px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.feedback-form__list--name {
+  margin: 25px 0;
+}
+.name-item {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.name-item__label{
+  margin-right: 15px;
+}
+
+.feedback-form__list--contacts{
+  margin: 20px 0 30px;
+}
+
+.contacts-item{
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+.contacts-item__label{
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.feedback-form__list--opinion{
+  margin: 20px 0;
+}
+.opinion-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form__label--thick{
+  margin-left: 70px;
+  padding: 25px 0;
+}
+.radio-label::after{
+  content: "";
+
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+.input--radio:checked~.radio-label::before{
+  content: "";
+
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 25px;
+  left: 17px;
+
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+}
+.feedback-form__list--attractions{
+  margin: 20px 0;
+}
+.attractions-item{
+  position: relative;
+  margin: 25px;
+}
+.checkbox-label::after{
+  content: "";
+
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  border-radius: 15%;
+  background-color: #f2f2f2;
+}
+.input--checkbox:checked~.checkbox-label::before{
+  content: "";
+
+  width: 24px;
+  height: 17px;
+  position: absolute;
+  top: 3px;
+  left: 17px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.feedback-form__comment-area{
+  margin: 20px 0;
+  width: 280px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::placeholder{
+    color: black;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+.feedback-form__button{
+  margin: 40px 20px;
+}

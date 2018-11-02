@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Галлерея</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
   <nav class="nav">
-    <a class="nav__link" href="index.html">
-      <img class="nav__link-logo" width="100" height="80" src="img/logo.png">
-      <span class="visually-hidden">Седона</span>
-    </a>
     <ul class="nav__list">
       <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
       <li class="nav__item"><a class="nav__link nav__link--current" href="gallery.html">Фото и видео</a></li>
       <li class="nav__item"><a class="nav__link" href="feedback.html">Форма отзыва</a></li>
       <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/">HTML academy</a></li>
     </ul>
+    <a class="nav__link" href="index.html">
+      <img class="nav__link-logo" width="100" height="80" src="img/logo-sedona-mobile.svg">
+      <span class="visually-hidden">Седона</span>
+    </a>
     <button class="nav__button nav__button--menu" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
@@ -30,10 +31,10 @@
 <main>
   <h1 class="visually-hidden">Галлерея сайта</h1>
 
-  <div class="inner-page__main-photo">
+  <div class="main-photo--inner-page">
     <!-- Картинощка как фон дива через CSS -->
     <span class="visually-hidden">Фото Седона</span>
-    <div class="inner-page__main-photo-text">
+    <div class="main-photo-text--inner-page">
       <!-- "Надпись: Седона" -->
     </div>
   </div>
@@ -45,41 +46,43 @@
         Фотографии помогут вам забыть о политике и экономике.</p>
     </div>
 
-    <div class="photo-gallery__photo ">
-      <!-- IMG -->
-      <div class="photo-gallery__photo-info photos-info">
-        <h3 class="photos-info__title">Неродные просторы</h3>
-        <p class="photos-info__author">Автор фото: Борис</p>
-        <span class="photos-info__likes">1350</span>
-      </div>
-    </div>
+    <ul class="photo-gallery__photos-list">
+      <li class="photo-gallery__photo-box ">
+        <img class="photo-gallery__photo" width="280" height="280" src="img/photo-sunset-mobile@1x.jpg">
+        <div class="photo-gallery__photo-info photos-info">
+          <h3 class="photos-info__title">Неродные просторы</h3>
+          <p class="photos-info__author">Автор фото: Борис</p>
+          <span class="photos-info__likes">1350</span>
+        </div>
+      </li>
 
-    <div class="photo-gallery__photo">
-      <!-- IMG -->
-      <div class="photo-gallery__photo-info photos-info">
-        <h3 class="photos-info__title">Местная растительность</h3>
-        <p class="photos-info__author">Автор фото: Сергей</p>
-        <span class="photos-info__likes">143</span>
-      </div>
-    </div>
+      <li class="photo-gallery__photo-box">
+        <img class="photo-gallery__photo" width="280" height="280" src="img/photo-cactus-mobile@1x.jpg">
+        <div class="photo-gallery__photo-info photos-info">
+          <h3 class="photos-info__title">Местная растительность</h3>
+          <p class="photos-info__author">Автор фото: Сергей</p>
+          <span class="photos-info__likes">143</span>
+        </div>
+      </li>
 
-    <div class="photo-gallery__photo">
-      <!-- IMG -->
-      <div class="photo-gallery__photo-info photos-info">
-        <h3 class="photos-info__title">Дорога на север</h3>
-        <p class="photos-info__author">Автор фото: Петр</p>
-        <span class="photos-info__likes">96</span>
-      </div>
-    </div>
+      <li class="photo-gallery__photo-box">
+        <img class="photo-gallery__photo" width="280" height="280" src="img/photo-roads-mobile@1x.jpg">
+        <div class="photo-gallery__photo-info photos-info">
+          <h3 class="photos-info__title">Дорога на север</h3>
+          <p class="photos-info__author">Автор фото: Петр</p>
+          <span class="photos-info__likes">96</span>
+        </div>
+      </li>
 
-    <div class="photo-gallery__photo">
-      <!-- IMG -->
-      <div class="photo-gallery__photo-info photos-info">
-        <h3 class="photos-info__title">Мост дьявола</h3>
-        <p class="photos-info__author">Автор фото: Антон</p>
-        <span class="photos-info__likes">254</span>
-      </div>
-    </div>
+      <li class="photo-gallery__photo-box">
+        <img class="photo-gallery__photo" width="280" height="280" src="img/photo-bridge-mobile@1x.jpg">
+        <div class="photo-gallery__photo-info photos-info">
+          <h3 class="photos-info__title">Мост дьявола</h3>
+          <p class="photos-info__author">Автор фото: Антон</p>
+          <span class="photos-info__likes">254</span>
+        </div>
+      </li>
+    </ul>
 
   </section>
 
@@ -89,36 +92,40 @@
       <p class="text-box__caption">Все еще сомневаетесь?</p>
       <p class="text-box__text">Смотрите видеопрезентацию и скорее за билетами,
         пока они не подорожали в очередной раз!</p>
-      <!-- Видосик будет тут! :D -->
     </div>
 
+    <img class="video__preview-img" width="320" height="201" src="img/video-mobile@1x.jpg">
+    <div class="video__video-buttons">
+    <!-- ТУТ БУДУТ КНОПКИ УПРАВЛЕНИЯ! -->
+    </div>
   </section>
 </main>
 
 <footer class="footer">
-  <span class="footer__caption">#visitsedona</span>
+  <p class="footer__caption">#visitsedona</p>
 
   <ul class="footer__social-list">
-    <li class="footer__social-item">
-      <a class="social-btn social-btn--twitter" href="#">
+    <li class="footer__social-item social-btn social-btn--twitter">
+      <a class="social-link" href="#">
         <span class="visually-hidden">Twitter</span>
       </a>
     </li>
 
-    <li class="footer__social-item">
-      <a class="social-btn social-btn--facebook" href="#">
+    <li class="footer__social-item social-btn social-btn--facebook">
+      <a class="social-link" href="#">
         <span class="visually-hidden">Facebook</span>
       </a>
     </li>
 
-    <li class="footer__social-item">
-      <a class="social-btn social-btn--youtube" href="#">
+    <li class="footer__social-item social-btn social-btn--youtube">
+      <a class="social-link" href="#">
         <span class="visually-hidden">YouTube</span>
       </a>
     </li>
   </ul>
 
-  <div class="footer__link--academy">Разработано
+  <div class="footer__link--academy">
+    <p class="footer__social-text">Разработано</p>
     <a class="footer__social-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
   </div>
 
