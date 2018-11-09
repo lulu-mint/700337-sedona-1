@@ -12,33 +12,39 @@
   font-style: normal;
 }
 
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "normalize.less";
+@import "main.less";
 @import "nav.less";
-@import "main-photo";
-@import "features";
-@import "search-by-date";
-@import "footer";
-@import "text-box";
-@import "button";
-@import "photo-gallery";
-@import "photos-info";
-@import "video";
-@import "feedback-form";
+@import "main-photo.less";
+
+@import "search-by-date.less";
+@import "footer.less";
+@import "text-box.less";
+@import "button.less";
+@import "photo-gallery.less";
+@import "photos-info.less";
+@import "video.less";
+@import "feedback-form.less";
+@import "social-link.less";
+@import "featuress";
+@import "features-list";
+@import "features-item.less";
+
+
+.triangles
+{
+margin: 0;
+  padding: 0;
+  margin-left: -20px;
+
+  height: 15px;
+  width: 320px;
+  display: block;
+  margin-top: auto;
+}
+.triangles-a{
+  position: absolute;
+  top:363px;
+  margin:0;
+  height: 26px;
+}

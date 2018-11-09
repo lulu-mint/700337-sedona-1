@@ -1,0 +1,139 @@
+
+.features-item {
+  margin: 0;
+  padding: 0 20px;
+
+  color: #333333;
+
+  &__caption {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__number {
+    margin: 11px 0 15px;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &--grey {
+    padding: 25px 35px 29px;
+    background-color: #eeeeee;
+    position: relative;
+
+    text-align: center;
+
+  }
+  &--border-bottom::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-color: #d6d6d6;
+  }
+  &--blue {
+    padding: 40px 20px;
+
+    background-color: #81b3d2;
+    color: white;
+
+    text-align: center;
+
+    & .features-item__caption,
+    & .features-item__text,
+    & .features-item__number {
+      color: white;
+    }
+  }
+
+  &__img {
+    margin-top: auto;
+    width: 100%;
+    height: 260px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--canyon {
+      background-image: url("../img/main-bridge-mobile@1x.jpg");
+    }
+
+    &--accomodation {
+      background-image: url("../img/main-city-mobile@1x.jpg");
+    }
+  }
+
+  &--additional-item {
+    margin: 29px 0 0;
+    padding: 0 20px 0 50px;
+    position: relative;
+
+    & .features-item__caption {
+      margin-bottom: 14px;
+    }
+&:first-of-type{
+  margin-top: 34px;
+}
+    &:last-of-type {
+      margin-bottom: 36px;
+    }
+  }
+
+  &--pic-house::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 2px;
+    width: 40px;
+    height: 36px;
+
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--pic-present::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 6px;
+    width: 40px;
+    height: 37px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--pic-burger::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 40px;
+    height: 35px;
+
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

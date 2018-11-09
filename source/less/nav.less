@@ -11,6 +11,7 @@
     padding: 0;
 
     list-style: none;
+
     .nav__link {
       margin: 0;
       padding: 0;
@@ -40,14 +41,18 @@
     }
   }
 
-  .nav__link-logo {
+  .nav__link--logo {
+  height: 0;
+  }
+  .nav__logo{
     margin: 0;
     padding: 0;
 
-    width: 100px;
+    width: 105px;
     height: 83px;
     position: absolute;
-    left: 100px;
+    left: 108px;
+    z-index: 2;
   }
 
   .nav__button {
@@ -63,20 +68,20 @@
   }
 
   .nav__button--menu {
-    background-image: url("../img/icon-menu.svg");
+/*    background-image: url("../img/icon-menu.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
-    margin-left: 260px;
+    background-position: center;*/
+    margin-left: 263px;
   }
 
   .nav__button--close {
-    background-image: url("../img/icon-cross.svg");
+/*    background-image: url("../img/icon-cross.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position: center;*/
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: 2px;
+    right: 7px;
   }
 }
