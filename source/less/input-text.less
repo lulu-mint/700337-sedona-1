@@ -1,0 +1,74 @@
+/*  НАПОМИНАНИЕ:
+  .feedback-form__name-item
+  .feedback-form__contacts-item
+  имеют нижние маргины!
+*/
+
+.input-text {
+  margin: 0;
+  padding: 20px;
+
+  width: 100%;
+  height: 58px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: white;
+    outline-color: #e5e5e5;
+  }
+
+  &::placeholder {
+    margin: 0;
+    padding: 0;
+    &:extend(.input-label--checkbox);
+  }
+}
+
+.input-text--comment-area {
+  margin: 20px 0;
+  padding: 15px 20px;
+
+  min-width: 280px;
+  max-width: 320px;
+  min-height: 160px;
+  max-height: 280px;
+}
+
+.input-text--icon {
+  content: "";
+
+  width: 57px;
+  height: 57px;
+
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 2;
+
+  color: black;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-text--icon-phone::after {
+  &:extend(.input-text--icon);
+  background-image: url("../img/icon-phone.svg");
+}
+
+.input-text--icon-mail::after {
+  &:extend(.input-text--icon);
+  background-image: url("../img/icon-mail.svg");
+}

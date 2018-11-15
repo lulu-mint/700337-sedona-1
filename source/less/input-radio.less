@@ -1,0 +1,39 @@
+/*  НАПОМИНАНИЕ:
+  .feedback-form__opinion-item { margin: 17px 0 27px; }
+*/
+
+.input-radio__label {
+  margin-left: 80px;
+  padding: 0;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    width: 55px;
+    height: 55px;
+
+    position: absolute;
+    top: -13px;
+    left: -80px;
+
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+}
+
+.input-radio:checked ~ .input-radio__label::before {
+  content: "";
+
+  width: 21px;
+  height: 21px;
+
+  position: absolute;
+  top: 4px;
+  left: -62px;
+
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+}

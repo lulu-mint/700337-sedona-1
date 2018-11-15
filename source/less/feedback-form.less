@@ -1,5 +1,6 @@
 .feedback-form {
   margin: 0;
+  margin-bottom: 43px;
   padding: 0;
 }
 
@@ -12,14 +13,12 @@
 }
 
 .feedback-form__caption {
-  margin: 0;
-  margin-top: 17px;
+  margin: 17px 0 0;
   padding: 0;
 
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-
   text-align: center;
 }
 
@@ -31,69 +30,35 @@
 
   display: flex;
   flex-direction: column;
-}
 
-.feedback-form__label--thin {
-  margin: 0;
-  padding: 0;
-
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-}
-
-.feedback-form__label--thick,
-.feedback-form__input-text::placeholder {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: black;
-  text-transform: none;
-}
-
-.feedback-form__input-text {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-
-  height: 58px;
-  border: none;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-
-  &:hover {
-    background-color: #e5e5e5;
+  &--name {
+    margin: 22px 0 25px;
   }
 
-  &:active,
-  &:focus {
-    background-color: white;
-    outline-color: #e5e5e5;
+  &--contacts {
+    margin: 20px 0 28px;
+  }
+
+  &--opinion {
+    margin: 20px 0 17px;
+  }
+
+  &--attractions {
+    margin: 20px 0 1px;
   }
 }
 
-.feedback-form__list--name {
-  margin: 22px 0 25px;
-}
 
-.name-item {
+.feedback-form__name-item {
   margin: 0;
   margin-bottom: 20px;
+
   display: flex;
   align-items: baseline;
 
   &:last-of-type {
     margin-bottom: 0;
   }
-}
-
-.name-item__label {
-  margin-right: 15px;
-}
-
-
-.feedback-form__list--contacts {
-  margin: 20px 0 28px;
 }
 
 .feedback-form__contacts-item {
@@ -110,144 +75,16 @@
   }
 }
 
-.contacts-item__label {
-  margin-top: 2px;
-  margin-bottom: 7px;
-  margin-left: 22px;
+.feedback-form__opinion-item {
+  margin: 17px 0 27px;
+  padding: 0;
 }
 
-.feedback-form__list--opinion {
-  margin: 20px 0;
-}
-
-.opinion-item {
-  margin: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.feedback-form__label--thick {
-  margin-left: 70px;
-  padding: 25px 0;
-}
-
-.radio-label {
-  &::after {
-    content: "";
-
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-
-    border-radius: 50%;
-    background-color: #f2f2f2;
-  }
-  /*   &:hover {
-      background-color: #e5e5e5;
-    }
-    &:active {
-      background-color: #d5d5d5;
-    }
-    &:disabled {
-      background-color: #d5d5d5;
-      pointer-events: none;
-      cursor: default;
-    }
-    &:disabled{
-      background-color: #a4a4a4;
-    }*/
-}
-
-.input--radio:checked ~ .radio-label::before {
-  content: "";
-
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 25px;
-  left: 17px;
-
-  border-radius: 50%;
-  background-color: black;
-  z-index: 1;
-}
-
-.feedback-form__list--attractions {
-  margin: 20px 0;
-}
-
-.attractions-item {
-  position: relative;
-  margin: 25px;
-}
-
-.checkbox-label {
-  &::after {
-    content: "";
-
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    top: -15px;
-    left: 0;
-
-    border-radius: 15%;
-    background-color: #f2f2f2;
-  }
-  /*  &:hover {
-      background-color: #e5e5e5;
-    }
-    &:active {
-      background-color: #d5d5d5;
-    }
-    &:disabled {
-      background-color: #d5d5d5;
-      pointer-events: none;
-      cursor: default;
-    }*/
-}
-
-.input--checkbox:checked ~ .checkbox-label::before {
-  content: "";
-
-  width: 24px;
-  height: 17px;
-  position: absolute;
-  top: 3px;
-  left: 17px;
-
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: 1;
-}
-
-.feedback-form__comment-area {
-  margin: 20px 0;
-  width: 280px;
-  height: 160px;
-  box-sizing: border-box;
-  padding: 20px;
-  border: none;
-
-  background-color: #f2f2f2;
-  color: black;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-
-  &::placeholder {
-    color: black;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-  }
+.feedback-form__attractions-item {
+  margin: 12px 0 42px;
+  padding: 0;
 }
 
 .feedback-form__button {
-  margin: 40px 20px;
+  margin: 25px 20px;
 }

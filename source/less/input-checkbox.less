@@ -1,0 +1,42 @@
+/*  НАПОМИНАНИЕ:
+  .feedback-form__attractions-item { margin: 12px 0 42px; }
+*/
+
+.input-checkbox__label {
+  margin-left: 78px;
+  margin-bottom: 27px;
+  padding: 0;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    width: 55px;
+    height: 55px;
+    position: absolute;
+
+    top: -15px;
+    left: -80px;
+
+    border-radius: 10%;
+    background-color: #f2f2f2;
+  }
+}
+
+.input-checkbox:checked ~ .input-checkbox__label::before {
+  content: "";
+
+  width: 24px;
+  height: 17px;
+
+  position: absolute;
+  top: 4px;
+  left: -62px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
